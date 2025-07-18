@@ -1,0 +1,31 @@
+body {
+    background-color: #F9F2E6;
+}
+
+#header {
+    font-family: "National Park", sans-serif;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+}
+#header h1 {
+    color: #5E57C2;
+    font-weight: bold;
+}
+#header p {
+    color: #000000;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#colorPicker {
+    width: 100px;
+    height: 50px;
+}
