@@ -29,3 +29,15 @@ body {
     width: 100px;
     height: 50px;
 }
+
+#colorDisplay {
+    margin-top: 15px;
+    text-align: center;
+    font-family: "National Park", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#selectedColor:hover {
+    cursor: pointer;
+}
