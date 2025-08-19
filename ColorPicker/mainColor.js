@@ -16,10 +16,25 @@ function updateFirst(event) {
     if (h1) {
         h1.style.color = event.target.value;
     }
+    updateHex(event.target.value);
 }
 
 function updateAll(event) {
     document.querySelectorAll("#title").forEach((h1) => {
         h1.style.color = event.target.value;
+    });
+    updateHex(event.target.value);
+}
+
+function updateHex(selectedColor) {
+    document.getElementById("selectedColor").innerText = selectedColor;
+}
+
+function copyText() {
+    var text = document.getElementById("selectedColor").innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        console.log("Copied the text: " + text);
+    }).catch(err => {
+        console.error("Failed to copy text: ", err);
     });
 }
